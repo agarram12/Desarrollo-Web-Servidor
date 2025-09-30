@@ -13,13 +13,23 @@
     </head>
     <body>
     <?php
-        $_matriz['nombre']="Jorge";
+        /* $_matriz['nombre']="Jorge";
         $_matriz['apellido']="Pérez";
         $_matriz['edad']=35;
         $_matriz['altura']=1.77;
         $_matriz['peso']=80;
         $_matriz['pelo']="Moreno";
         $_matriz['estado']="Soltero";
+        */
+        $_matriz = [
+          "nombre" => "Jorge",
+          "apellido" => "Pérez",
+          "edad" => 35,
+          "altura" => 1.77,
+          "peso" => 80,
+          "pelo" => "Moreno",
+          "estado" => "Soltero"
+        ];
     ?>
     <table border="1">
         <tr align="center">

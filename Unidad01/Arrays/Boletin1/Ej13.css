@@ -1,0 +1,13 @@
+th,td {
+    padding-right: 1.2em;
+}
+th {
+    background-color: rebeccapurple;
+    color: white;
+    width: 5em;
+}
+
+td {
+    background-color: plum;
+    width: 1em;
+}

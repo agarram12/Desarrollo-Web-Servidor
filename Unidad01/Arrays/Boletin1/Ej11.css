@@ -1,0 +1,14 @@
+th, td {
+    padding: 0.6em;
+
+}
+
+th {
+   background-color: darkgreen;
+    color: white;
+    width: 2em;
+}
+
+td {
+    background-color: mediumspringgreen;
+}
