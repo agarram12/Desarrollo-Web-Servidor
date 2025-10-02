@@ -19,7 +19,7 @@
         $_matriz['altura']=1.77;
         $_matriz['peso']=80;
         $_matriz['pelo']="Moreno";
-        $_matriz['estado']="Soltero";
+        $_matriz['estado']="Soltero"; asdasd
         */
         $_matriz = [
           "nombre" => "Jorge",
