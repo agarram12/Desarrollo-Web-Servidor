@@ -10,9 +10,9 @@
             $datos = [3, "hola", 7.5, 11, true, 4, "23", null, 2.0, "cadena",  1               
             ];
 
-            foreach ($valores as $valor) {
-                if (is_numeric($valor)) {
-                    $numero = (int)$valor;
+            foreach ($datos as $dato) {
+                if (is_numeric($dato)) {
+                    $numero = (int)$dato;
                     $es_primo = true;
 
                     if ($numero < 2) {
@@ -26,7 +26,7 @@
                         }
                     }
 
-                    echo "El valor $valor es numérico y " . ($es_primo ? "es primo" : "no es primo") . ".<br>";
+                    echo "El valor $dato es numérico y " . ($es_primo ? "es primo" : "no es primo") . ".<br>";
                 }
             }
 

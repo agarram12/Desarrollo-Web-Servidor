@@ -19,9 +19,9 @@ continuación:-->
             <?php 
                 $numeros = [3,8,7,-6];
                 echo "<tr>";
-                echo "<th>Número</th>"
-                echo "<th>Cuadrado</th>"
-                echo "<th>Cubo</th>"
+                echo "<th>Número</th>";
+                echo "<th>Cuadrado</th>";
+                echo "<th>Cubo</th>";
                 echo "</tr>";
                 foreach ($numeros as $numero) {
                     echo "<tr>";
