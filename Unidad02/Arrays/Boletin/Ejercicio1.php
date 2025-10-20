@@ -19,12 +19,21 @@
                     echo $matriz[$i];
                     if ($i < 11) {
                         echo "-";
+                        // tambien echo implode("-", $matriz);
+                        // el primer parametro es el caracter es el separador y el array
                     }
                 }
                 echo "</td></tr>";
                 echo "<tr><th>Mayor</th>";
                 $mayor = max($matriz);
+                $menor = min($matriz);
+                $inverso = array_reverse($matriz);
+                $ordenado = $matriz;
+                sort($ordenado);
                 echo "<td>$mayor</td></tr>";
+                echo "<td>$menor</td></tr>";
+                echo "<td>$inverso</td></tr>";
+                echo "<td>$ordenado</td></tr>";
             ?>
         </table>
     </body>

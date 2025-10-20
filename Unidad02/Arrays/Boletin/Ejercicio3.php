@@ -147,6 +147,8 @@
                     $media = $total / 4;
                     echo "<td>$media</td>";
                     echo "</tr>";
+                } else {
+                    echo "<h2>El alumno no existe</h2>";
                 }
             }
         ?>
