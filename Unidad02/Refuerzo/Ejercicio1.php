@@ -46,9 +46,7 @@
             <th>Repeticiones</th>
             <?php
             foreach ($masVeces as $numero => $veces) {
-                if () {
 
-                }
             }
             ?>
         </table>

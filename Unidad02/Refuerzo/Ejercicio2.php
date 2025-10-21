@@ -6,7 +6,12 @@
         <title>Ejercicio 2</title>
     </head>
     <body>
-        <table>
+        <table border="1">
+            <th>Nombre</th>
+            <th>Partida 1</th>
+            <th>Partida 2</th>
+            <th>Partida 3</th>
+            <th>Puntuación Total</th>
             <?php
                 $jugadores = [
                     ['nombre' => 'Ana', 'partida1' => 10, 'partida2' => 15, 'partida3' =>
@@ -19,13 +24,17 @@
                 // calcular puntuación total
                 foreach($jugadores as $jugador) {
                     $puntuacion = $jugador['partida1'] + $jugador['partida2'] + $jugador['partida3'];
-                    echo "La puntuación de $jugador['nombre'] es de $puntuacion puntos";
                     // mostrar un rankings con los jugadores ordenados por puntuación
-                    usort($jugadores, $puntuacion);
-                    
+                    $jugador['puntuacion'] = $puntuacion;
                 }
-
-                
+                foreach ($jugadores as $jugador) {
+                    echo "<tr>";
+                    echo "<td>". $jugador['nombre'] . "</td>";
+                    echo "<td>". $jugador['partida1'] . "</td>";
+                    echo "<td>". $jugador['partida2'] . "</td>";
+                    echo "<td>". $jugador['partida3'] . "</td>";
+                    echo "<td>". $jugador['puntuacion'] . "</td>";
+                }
             ?>
         </table>
     </body>
