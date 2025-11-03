@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
                     ['nombre' => 'Marta', 'partida1' => 15, 'partida2' => 10, 'partida3' =>
                     5],
                 ];
-                // calcular puntuación total
+                // calcular puntuación total+
                 foreach($jugadores as $jugador) {
                     $puntuacion = $jugador['partida1'] + $jugador['partida2'] + $jugador['partida3'];
                     // mostrar un rankings con los jugadores ordenados por puntuación

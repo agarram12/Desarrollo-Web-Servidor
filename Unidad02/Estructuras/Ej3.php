@@ -37,5 +37,6 @@
                 default:
                     echo "Introduce un número válido para el día de la semana.";
             }
+            ?>
     </body>
 </html>
