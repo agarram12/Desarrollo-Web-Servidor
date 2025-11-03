@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Ejercicio 7</title>
+    <script>
+        let peso = Number(prompt("Introduce tu peso en libras"));
+        let altura = Number(prompt("Introduce tu altura en pulgadas"));
+        let pesoKilo = peso * 0.453592;
+        let alturaCm = altura * 2.54;
+        let alturaMetro = alturaCm / 100;
+        let imc = peso / Math.pow(altura,2);
+        console.log(`Altura es: ${alturaMetro}`);
+        console.log(`Peso es: ${pesoKilo}`);
+        console.log(`IMC entonces es: ${imc}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
