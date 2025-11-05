@@ -66,7 +66,6 @@
             echo "<tr><td colspan='2'>Mayor stock:</td>";
             echo "<td colspan='2'>" . $nombre . "</td>";
             echo "<td>" . $mayor . "</td></tr>";
-
         ?>
 
     </table>
