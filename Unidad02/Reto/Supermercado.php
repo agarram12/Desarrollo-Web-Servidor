@@ -7,81 +7,27 @@
     </head>
     <body>
         <?php
-            $lunes = [
-                "leche" => [
-                    "nombre" => "leche",
-                    "precio" => 5.99,
-                    "unidades" => 5,
-                    "cantidad" => 12
-                ],
-                "pan" => [
-                    "nombre" => "pan",
-                    "precio" => 1.50,
-                    "unidades" => 3,
-                    "cantidad" => 20
-                ],
-                "agua" => [
-                    "nombre" => "agua",
-                    "precio" => 2.0,
-                    "unidades" => 10,
-                    "cantidad" => 7
-                ]
-            ];
-            $martes = [
-                "leche" => [
-                    "nombre" => "leche",
-                    "precio" => 5.99,
-                    "unidades" => 3,
-                    "cantidad" => 8
-                ],
-                "pan" => [
-                    "nombre" => "pan",
-                    "precio" => 1.50,
-                    "unidades" => 4,
-                    "cantidad" => 12
-                ],
-                "agua" => [
-                    "nombre" => "agua",
-                    "precio" => 2.0,
-                    "unidades" => 18,
-                    "cantidad" => 6
-                ]
-            ];
+            $ventas = [
+                    "Lunes" =>
+                            ["Nombre" => "Huevos", "precio" => 2, "unidades" => 10],
+                            ["Nombre" => "Leche", "precio" => 3, "unidades" => 8],
+                            ["Nombre" => "Pan", "precio" => 1, "unidades" => 23],
+                    "Martes" =>
+                            ["Nombre" => "Huevos", "precio" => 2, "unidades" => 10],
+                            ["Nombre" => "Leche", "precio" => 3, "unidades" => 8],
+                            ["Nombre" => "Pan", "precio" => 1, "unidades" => 15],
+                    "Miercoles" =>
+                            ["Nombre" => "Huevos", "precio" => 2, "unidades" => 3],
+                            ["Nombre" => "Leche", "precio" => 3, "unidades" => 6],
+                            ["Nombre" => "Pan", "precio" => 1, "unidades" => 8]
+            ]
         ?>
         <table border="1">
             <tr>
                 <th>Producto</th>
-                <th>Precio</th>
+                <th>Precio unitario</th>
                 <th>Unidades vendidas</th>
             </tr>
-            <?php
-                $totalDia = 0;
-                $productoMasVendido = 0;
-                foreach ($lunes as $producto) {
-                    // mostrar tabla y dejar calculado el total del día
-                    echo "<tr>";
-                    echo "<td>" . $producto['nombre'] . "</td>";
-                    echo "<td>" . $producto['precio'] . "</td>";
-                    echo "<td>" . $producto['unidades'] . "</td>";
-                    echo "</tr>";
-                    $totalDia += $producto['precio'] * $producto['unidades'];
-                }
-                    // calcular cual es el producto más vendido
-                foreach ($lunes as $producto) {
-                    if ($producto['unidades'] > $productoMasVendido) {
-                        $productoMasVendido = $producto['unidades'];
-                    }
-                }
-            ?>
         </table>
-            <?php
-                // mostrar el total de ventas
-                echo "<p> Total ventas: " . $totalDia . "</p>";
-                foreach ($lunes as $producto) {
-                    if($producto['unidades'] == $productoMasVendido) {
-                        echo "<p>" . $producto['nombre'] . " ha sido el producto más vendido </p>";
-                    }
-                }
-            ?>
     </body>
 </html>
