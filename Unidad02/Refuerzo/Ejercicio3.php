@@ -67,7 +67,6 @@
             echo "<td colspan='2'>" . $nombre . "</td>";
             echo "<td>" . $mayor . "</td></tr>";
         ?>
-
     </table>
     </body>
 </html>
