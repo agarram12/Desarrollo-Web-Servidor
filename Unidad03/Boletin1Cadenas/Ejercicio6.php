@@ -7,7 +7,7 @@
         <style>
             table {
                 border-collapse: collapse;
-                border: 1px so;
+                border: 1px solid black;
             }
         </style>
     </head>
