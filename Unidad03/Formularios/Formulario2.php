@@ -16,7 +16,7 @@
         </style>
     </head>
     <body>
-        <form name="form1" method="get">
+        <form name="form1" method="get" action="">
             <input name="num1" type="number">
             <input name="num2" type="number">
             <input name="enviar" type="submit">
