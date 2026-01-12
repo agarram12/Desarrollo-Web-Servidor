@@ -40,6 +40,18 @@
         }
     }
     // crear nuevo animal
-    $a1 = new Animal("Lala", "Marrón", "2018-08-15");
-    echo $a1;
+    // $a1 = new Animal("Lala", "Marrón", "2018-08-15");
+    // echo $a1;
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $nombreForm = $_POST["nombre"];
+        $colorForm = $_POST["color"];
+        $fechaForm = $_POST["fecha"];
+        // objeto con los datos recibidos
+        $a2 = new Animal($nombreForm, $colorForm, $fechaForm);
+        echo $a2;
+        echo '<a href="formulario.html">Añadir otro animal</a>';
+    } else {
+        echo "No se ha introducido datos.";
+    }
 ?>
