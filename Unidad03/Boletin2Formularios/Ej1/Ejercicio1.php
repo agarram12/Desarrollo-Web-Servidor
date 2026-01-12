@@ -3,4 +3,7 @@
     $edad = trim($_POST['edad']);
 
     echo "<p>Hola " . $nombre . " tienes " . $edad . " años</p>";
+    if ($_SERVER["REQUEST_METHOD"]) {
+
+    }
 ?>
