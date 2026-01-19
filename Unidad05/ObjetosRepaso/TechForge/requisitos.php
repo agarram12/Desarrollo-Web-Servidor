@@ -37,7 +37,6 @@
         public function __toString() {
             $fechaFormateada = date("d/m/Y", strtotime($this->fechaPrototipo));
             return "invento: {$this->nombre} | prototipo: {$fechaFormateada} | Coste: {$this->coste}";
-
         }
 
         abstract public function calcularComplejidad();
