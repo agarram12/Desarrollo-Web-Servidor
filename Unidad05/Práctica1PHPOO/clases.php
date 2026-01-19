@@ -1,5 +1,5 @@
 <?php
-    interface certificable{
+    interface certificable {
         public function obtenerEtiqueta();
     }
     
