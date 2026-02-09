@@ -1,9 +1,4 @@
-<?
-    # Cookies
-    
-
-
-    # Clase evento
+<?php
     class Evento {
         protected $titulo;
         protected $descripcion;
@@ -20,16 +15,23 @@
             $this->categoria = $categoria;
         }
 
-        public function esProximo() {
-            $hora = new DateTime($this->fecha . '' . $this->hora);
-            $ahora = new DateTime();
-            $diferencia = $hora->getTimestamp() - $ahora->getTimestamp();
-            return $diferencia > 0 && $diferencia <= 86400;
-        }
-        
         public function getFechaCompleta() {
-            return date("d/m/Y", strtotime($this->fecha));
+            return new DateTime(($this->fecha . " " . $this->hora));
+        }
+
+        public function esProximo() {
+            $ahora = new DateTime();
+            $evento = $this->getFechaCompleta();
+            $diferencia = $evento->getTimestamp() - $ahora->getTimestamp();
+            return $diferencia > 0 && $diferencia <= 86400;    
+        }
+
+        public function getTitulo() {
+            return $this->titulo;
+        }
+
+        public function getCategorias() {
+            return $this->categoria;
         }
     }
-
 ?>
