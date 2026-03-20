@@ -5,7 +5,7 @@
 
     // comparar var1 y var2 usando == y ===
     if ($var1 == $var2) {
-        echo "Son el mismo valor";
+        echo "Son el mismo valor \n";
     }
 
     if ($var1 === $var2) {
