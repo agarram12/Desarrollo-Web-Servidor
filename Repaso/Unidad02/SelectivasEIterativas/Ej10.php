@@ -7,11 +7,16 @@
     </head>
     <body>
         <?php
-            $numero = 5;
-            for ($i=1;$i<=10;$i++) {
-                // potencia con doble **
-                echo $numero ** $i;
+            for ($i=260;$i=110;$i--) {
+                if ($i % 3 === 0) {
+                    echo "<p>" . $i . "</p>";
+                }
+
+                if ($i % 2 === 0) {
+                    echo "<p>" . $i . "</p>";
+                }
             }
+            
         ?>
     </body>
 </html>
