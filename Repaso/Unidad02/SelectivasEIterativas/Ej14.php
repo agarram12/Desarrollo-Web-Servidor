@@ -26,7 +26,7 @@
             ];
 
             echo "<div>";
-                echo "<p>". "" . "</p>";
+                echo "<p>" . "" . "</p>";
             echo "</div>";
 
         ?>
