@@ -8,7 +8,7 @@
 <body>
     <?php
         $numeroDia = 3;
-        switch ($1) {
+        switch ($numeroDia) {
             case 1:
                     echo "<p>Lunes</p>";
                 break;
