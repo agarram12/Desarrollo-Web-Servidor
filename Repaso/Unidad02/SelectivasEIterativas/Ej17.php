@@ -7,7 +7,14 @@
     </head>
     <body>
         <?php
-            
+            $cadenas = ["def", "abc", "ghi"];
+            sort($cadenas);
+            echo "Cadenas ordenadas por orden";
+            foreach ($cadenas as $cadena) {
+                echo "<div>";
+                    echo "<p>" . $cadena . "</p>";
+                echo "</div";
+            }
         ?>
     </body>
 </html>
