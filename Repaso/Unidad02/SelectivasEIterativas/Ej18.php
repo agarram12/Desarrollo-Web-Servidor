@@ -6,11 +6,24 @@
         <title>Document</title>
     </head>
     <body>
-        <?php
-            $arr = [3,8,7,-6];
-            foreach ($arr as $elemento) {
-
-            }
-        ?>
+        <table>
+            <thead>
+                <tr>
+                    <th>Número</th>
+                    <th>Cuadrado</th>
+                    <th>Cubo</th>
+                </tr>
+            </thead>
+            <?php
+                $arr = [3,8,7,-6];
+                foreach ($arr as $elemento) {
+                    echo "<tr>";
+                        echo "<td>" . $elemento . "</td>";
+                        echo "<td>" . pow($elemento, 2) . "</td>";
+                        echo "<td>" . pow($elemento, 3) . "</td>";
+                    echo "</tr>";
+                }
+            ?>
+        </table>
     </body>
 </html>
